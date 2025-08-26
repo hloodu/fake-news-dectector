@@ -18,7 +18,7 @@ Try the app [here](https://fake-news-dectector-hqvbgbfg2md5cbqx2fwvus.streamlit.
 - LogisticRegression: F1 Score = 0.98
 - MultinomialNB: F1 Score = 0.93
 - RandomForestClassifier: F1 Score = **1.00**
-- 
+  
 Since RandomForestClassifier had the highest F1 Score (which balances catching more fake news with preventing real news from being mislabelled), it's used in the final model.
 
 **Dataset from Kaggle**: [Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
