@@ -1,16 +1,10 @@
 import streamlit as st
 import joblib
-import os
-import nltk
 from src.cleaning import clean_text
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from wordcloud import WordCloud
-
-# Set custom nltk_data path
-nltk_data_path = os.path.join(os.path.dirname(__file__), 'resources', 'nltk_data')
-nltk.data.path.insert(0, nltk_data_path)
 
 
 # get dataset for visuals
