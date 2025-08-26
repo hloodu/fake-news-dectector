@@ -24,7 +24,7 @@ if st.button("Analyze"):
 st.header("Explore the Data")
 
 st.subheader("Breakdown")
-st.image("./images/datachart.png")
+st.image("./images/datachart1.png")
 
 st.subheader("Most Common Words:")
 
@@ -32,21 +32,21 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Fake News")
-    st.image("./images/fake.png")
+    st.image("./images/fake1.jpg")
 
 with col2:
     st.subheader("Real News")
-    st.image("./images/real.png")
+    st.image("./images/real1.jpg")
 
 
-# code used to generate images: 
+# # code used to generate images: 
 
 # import pandas as pd
 # import matplotlib.pyplot as plt
 # import seaborn as sns
 # from wordcloud import WordCloud
 
-# get dataset for visuals
+# # get dataset for visuals
 # @st.cache_data
 # def load_data():
 #     fake = pd.read_csv("data/Fake.csv")
@@ -58,7 +58,7 @@ with col2:
 
 # df = load_data()
 
-# graph class distribution
+# # graph class distribution
 # fig, ax = plt.subplots()
 # sns.countplot(data=df, x="label", ax=ax)
 # ax.set_xticklabels(["Real", "Fake"])
@@ -67,8 +67,20 @@ with col2:
 
 # df['cleaned'] = df['text'].apply(clean_text)
 
-# create word clouds
+# # create word clouds
 # fake_text = ' '.join(df[df['label'] == 1]['cleaned'])
 # real_text = ' '.join(df[df['label'] == 0]['cleaned'])
 
 # st.header("Word Clouds: Most Common Words")
+
+# col1, col2 = st.columns(2)
+
+# with col1:
+#     st.markdown("**Fake News**")
+#     fake_wc = WordCloud(width=300, height=200, background_color='white').generate(fake_text)
+#     st.image(fake_wc.to_array())
+
+# with col2:
+#     st.markdown("**Real News**")
+#     real_wc = WordCloud(width=300, height=200, background_color='white').generate(real_text)
+#     st.image(real_wc.to_array())
