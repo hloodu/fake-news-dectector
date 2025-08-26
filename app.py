@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import nltk
 from src.cleaning import clean_text
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -15,6 +16,12 @@ def load_data():
     real['label'] = 0
     df = pd.concat([fake, real], ignore_index=True)
     return df
+
+@st.cache_resource
+def download_nltk():
+    nltk.download('stopwords')
+
+download_nltk()
 
 # load model and vectorizer
 model = joblib.load("models/model.pkl")
