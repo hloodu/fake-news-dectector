@@ -18,7 +18,7 @@ df = df.sample(frac=1, random_state=42).reset_index(drop=True)
 df['cleaned'] = df['text'].apply(clean_text)
 
 # Vectorize
-vectorizer = TfidfVectorizer(max_features=5000)
+vectorizer = TfidfVectorizer(stop_words = "english", max_features=5000)
 X = vectorizer.fit_transform(df['cleaned'])
 y = df['label']
 
