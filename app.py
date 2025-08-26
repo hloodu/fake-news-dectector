@@ -21,9 +21,10 @@ if st.button("Analyze"):
     st.markdown(f"### This article is **{label}**")
 
 # show visuals
+st.divider()
 st.header("Explore the Data")
 
-st.subheader("Breakdown")
+st.subheader("Article Breakdown")
 st.image("./images/datachart1.png")
 
 st.subheader("Most Common Words:")

@@ -3,7 +3,8 @@
 A machine learning web app that detects whether a news article is real or fake.
 
 Built with Python, scikit-learn, and Streamlit. 
-Also uses WordCloud, pandas, RandomForestClassifier, joblib, matplotlib, and seaborn.
+Also uses pandas, RandomForestClassifier, and joblib.
+Data visualizations made with WordCloud, matplotlib, and seaborn.
 
 Try the app [here](https://fake-news-dectector-hqvbgbfg2md5cbqx2fwvus.streamlit.app/)!
 
@@ -17,6 +18,6 @@ Try the app [here](https://fake-news-dectector-hqvbgbfg2md5cbqx2fwvus.streamlit.
 - LogisticRegression: F1 Score = 0.98
 - MultinomialNB: F1 Score = 0.93
 - RandomForestClassifier: F1 Score = **1.00**
-Since RandomForestClassifier had the highest F1 Score (which balances catching more fake news and preventing mislabelling real news), it's used in the final model.
+Since RandomForestClassifier had the highest F1 Score (which balances catching more fake news with preventing real news from being mislabelled), it's used in the final model.
 
 **Dataset from Kaggle**: [Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
