@@ -34,7 +34,7 @@ with col1:
     st.subheader("Fake News")
     st.image("./images/fake1.jpg")
 with col2:
-    st.subheader("Real News
+    st.subheader("Real News")
     st.image("./images/real1.jpg")
 
 
