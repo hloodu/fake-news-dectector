@@ -22,21 +22,19 @@ if st.button("Analyze"):
 
 # show visuals
 st.divider()
-st.header("Explore the Data")
+st.header("Explore the Training Data")
 
 st.subheader("Article Breakdown")
 st.image("./images/datachart1.png")
 
 st.subheader("Most Common Words:")
-
 col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Fake News")
     st.image("./images/fake1.jpg")
-
 with col2:
-    st.subheader("Real News")
+    st.subheader("Real News
     st.image("./images/real1.jpg")
 
 
